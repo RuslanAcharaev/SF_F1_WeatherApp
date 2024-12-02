@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 import '../styles/App.css';
-import Search from './Search';
-import Location from './Location';
-import Weather from './Weather';
-import WeatherForecast from './WeatherForecast';
+import Search from './Search.jsx';
+import Location from './Location.jsx';
+import Weather from './Weather.jsx';
+import WeatherForecast from './WeatherForecast.jsx';
 import getCleanData from '../weatherData';
 
 function App() {
