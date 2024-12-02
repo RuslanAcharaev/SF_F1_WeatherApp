@@ -1,0 +1,59 @@
+{
+  "name": "sf_f1_weatherapp",
+  "version": "1.0.0",
+  "description": "Basic Weather Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix",
+    "stylelint": "stylelint \"**/*.css\" --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+        "src/**/*.(js|jsx)": [
+            "npm run lint:write",
+            "prettier --write --ignore-unknown"
+        ],
+        "src/**/*.(css)": [
+            "npm run stylelint"
+        ]
+    },
+  "author": "Ruslan Acharaev",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@eslint/js": "^9.16.0",
+    "axios": "^1.7.8",
+    "babel-loader": "^9.2.1",
+    "bootstrap": "^5.3.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.13.0",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "luxon": "^3.5.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "prettier": "3.4.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.6",
+    "react-dom": "^18.3.1",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}

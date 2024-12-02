@@ -1,0 +1,8 @@
+node_modules
+dist
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/SF_F1_WeatherApp.iml
+/.idea/vcs.xml

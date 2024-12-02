@@ -1,0 +1,35 @@
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.weather-main > span {
+    font-size: 60px;
+    margin: 5px -10px -5px;
+}
+
+.weather-main > p {
+    font-size: 16px;
+}
+
+.temp-value::after {
+    content: '\00B0';
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-details > span {
+    font-size: 16px;
+}
